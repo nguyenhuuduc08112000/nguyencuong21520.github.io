@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- <div id="app"></div> -->
+    <section class="chat-container">
+        <div class="aside-left">
+            <div class="list-conversation">
+                <div class="conversation">
+                    <div class="conversation-title">First Conversation</div>
+                    <div class="conversation-members">2 member</div>
+                </div>
+                <div class="conversation">
+                    <div class="conversation-title">Second Conversation</div>
+                    <div class="conversation-members">2 member</div>
+                </div>
+                <div class="conversation">
+                    <div class="conversation-title">Third Conversation</div>
+                    <div class="conversation-members">2 member</div>
+                </div>
+            </div>
+            <form class="form-add-conversation">
+                <div class="input-wrapper">
+                    <input type="text" name="title" placeholder="New Conversation">
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" name="friendEmail" placeholder="Your Friend Email">
+                </div>
+                <!-- <i class="fas fa-acorn"></i> -->
+                <button class="btn-icon" type="submit"><i class="fad fa-comments-alt"></i></i></button>
+            </form>
+        </div>
+      
+        <div class="current-conversation">
+            <div class="list-message-chat">
+
+            </div>
+            <form class="form-add-message-chat">
+                <button id="bbb">out</button>
+                <div class="input-wrapper">
+                    <input type="text" name="message" placeholder="Enter Your Message...">
+                </div>
+                <button id="aaa" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="aside-right">
+            <div class="details-current-conversation">
+                <div class="conversation-email">nguyencuong21520@gmail.com</div>
+                <div class="conversation-email">nguyenvancuong21520@gmail.com</div>
+                <div class="conversation-create-at">21/05/2000 19:00:00</div>
+            </div>
+            <div class='btn-leave-conversation-wapper'>
+                <button id="btn-leave-conversation" class="btn-icon">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+        </div>
+        <!-- aside-right -->
+    </section>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/components.js"></script>
+    <script src="./js/model.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/view.js"></script>
+    <script src="./js/utils.js"></script>
+</body>
+
+</html>

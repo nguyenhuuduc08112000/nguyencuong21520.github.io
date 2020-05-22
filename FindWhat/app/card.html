@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <!-- font awesome -->
+  <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/card.css">
+  <link rel ="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-branch mr-4" href="#">
+            <img height="45px" src="./img/logo.JPG" style="border-radius: 50%;">
+            Where to go</a>
+        <form class="form-inline input-nav" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Tìm kiếm">
+            <button class="btn btn-outline-light" type="submit"> <i class="fas fa-search"
+                    style="color:  rgb(133, 133, 231);"></i> </button>
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chat</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+                <li  class="nav-item">
+                    <a id="dangNhapChange" class="nav-link pr-0" href="#">Đăng Nhập</a>
+                </li>
+                <li  class="nav-item">
+                    <a id="dangKyChange" class="nav-link" href="#"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<h1>Các địa điểm nên đến tại Hà Nội</h1>
+  <div style="margin-top: 20px;" class="container container-card">
+    <div id="cacdeck" class="row">
+        <div class="col-md-4 col-sm-6"style="
+        margin-bottom: 30px;
+    ">
+        <div class="card ">
+        <span class="content-span" style="padding: 5px 0px 0px 10px"><i class="fas fa-user-tie"></i> Nguyễn Văn Cường</span>
+        <div class="show-time-user" style="margin-left:36px !important; ">18:00 21/05/2000</div>
+        <img class="card-img-top img-fluid img-cuong" src="${x.img}">
+        <div class="card-body text-center">
+          <p class="type-name-incard">Quán bar</p>
+          <h4>${x.name}</h4>
+          <p class="content-incrad">${x.content}</p>
+          <div class="container-fluid">
+            <div class="left-incrad-wrapper">
+              <div class="left-incard-content-wrapper dropdown">
+                <p data-toggle="dropdown">1 <i class="fas fa-heart-circle"></i></p>
+                <ul class="dropdown-menu">
+                      <li class="dropdown-header"><strong>Người thích</strong></li>
+                      <div>
+                      <li>Nguyễn Văn Cường</li>
+                      <li>Nguyễn Hồng Hà</li> 
+                      <li>Nguyễn Văn Cường</li>
+                      <li>Nguyễn Hồng Hà</li>
+                      <li>Nguyễn Văn Cường</li>
+                      <li>Nguyễn Hồng Hà</li>
+                    </div>
+                                            
+                      
+                    </ul>
+              </div>
+            </div>
+            <div class="right-incrad-wrapper">
+              <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal"
+                data-target="#modalYT">Chi tiết</button>
+
+              <!-- alooooo -->
+              <div class="modal fade" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+
+                  <!--Content-->
+                  <div class="modal-content">
+
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+
+                      <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item"
+                          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fthelavish66%2Fvideos%2F446773685948671%2F&show_text=0&width=560"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="content-cac-ban-oi">
+                        <h1>${x.name}</h1>
+                        <div class="modal-tag">
+                          <a>${x.hashtag}</a>
+                          
+                        </div>
+                        <div class="boc-noi-dung">
+                          <p>${x.content}</p>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer flex-column flex-md-row">
+                      <p>1 <i class="fas fa-heart-circle"></i></p>
+                      <span class="">${x.address}</span>
+                      <div class="boc-cai-button">
+                        <button type="button" class="btn btn-outline-light text-dark">Thêm vào list</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <!--/.Content-->
+
+                </div>
+              </div>
+              <!-- aloooo -->
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>     
+
+    <footer>
+      <div class="container-fluid padding">
+          <div class="row text-center">
+              <div class="col-md-5">
+                  <hr class="light">
+                  <h5>Team</h5>
+                  <hr class="light">
+                  <p>Nguyễn Văn Cường</p>
+                  <p>Nguyễn Hồng Hà</p>
+                  <p>Phùng Minh Huyền</p>
+                  <p>Nguyễn Hữu Đức</p>
+              </div>
+              <div class="col-md-2">
+                  <img height="200px" style="padding-top: 20px;" src="./img/logo.JPG">
+              </div>
+              <div class="col-md-5">
+                  <hr class="light">
+                  <h5>Liên Hệ</h5>
+                  <hr class="light">
+                  <p>wtgmindx@gmail.com</p>
+                  <p>Hanoi, Vietnam</p>
+                  <p>0374523912</p>
+                  <div class="social-media">
+                      <ul>
+                          <a>
+                              <li id="fbnek"><img src="img/FbIcon.png"></li>
+                          </a>
+                          <a>
+                              <li id="googlenek"><img src="./img/instagram.png"></li>
+                          </a>
+                          <a>
+                              <li id="phonenek"><img src="img/messenger.png"></li>
+                          </a>
+                          <a>
+                              <li id="githubnek"><img src="img/zalo.png"></li>
+                          </a>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12">
+                  <hr class="light-80">
+                  <h5>&copy; Where to go!</h5>
+              </div>
+          </div>
+      </div>
+      </footer>
+</body>
+</html>

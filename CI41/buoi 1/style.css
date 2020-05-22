@@ -1,0 +1,21 @@
+        /* id */
+        #backgroud-red {
+            background-color: red;
+        }
+
+        /* text */
+        .textwhite {
+            color: red;
+            background: gray;
+        }
+
+        div {
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 30px;
+            width: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 100;
+        }

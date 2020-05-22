@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let m = true;
+let dem = 0;
+let studentsName = [];
+let studentsAge = [];
+while(m)
+{
+if(confirm("Ban co muon nhap nua khong?"))
+{
+  studentsName[dem] = prompt("Nhap Ho Ten:");
+  studentsAge[dem] = parseInt(prompt("Nhap Tuoi: "))
+  dem++;
+}
+else
+break;
+};
+let max=0;
+let x;
+for ( let i in studentsAge)
+{
+  if(studentsAge[i]>=max)
+  {''
+    max=studentsAge[i];
+    x=i;
+  }
+}
+console.log("Ban Nhieu Tuoi Nhat La : "+studentsName[x] + "," + studentsAge[x] +" Tuoi!");
+
+    </script>
+</body>
+</html>

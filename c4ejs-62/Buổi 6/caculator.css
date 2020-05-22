@@ -1,0 +1,50 @@
+/* body {
+    background: #ccc;
+}
+
+.container {
+    width: 500px;
+    background: #ffffff;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.avatar {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.avatar img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #eee;
+}
+
+.name {
+    text-align: center;
+}
+
+.name h2 {
+    text-transform: capitalize;
+    color: #3ad6d6;
+}
+
+.name h4 {
+    color: #aaaaaa;
+    font-style: italic;
+    word-spacing: 3px;
+}
+
+hr {
+    border-top: #bbb;
+} */
+body
+{
+    background-color: #bfbfbf;
+}
+.table{
+    border-color: black;
+    border:1px solid;
+    
+     
+}

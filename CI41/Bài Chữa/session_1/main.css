@@ -1,0 +1,25 @@
+
+/* tag name */
+div {
+  height: 30px;
+  margin: 1px;
+  padding: 1px;
+  border: 1px solid black;
+  
+  background: white;
+  color: black;
+
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 100;
+}
+/* id */
+#background-red {
+  background: red;
+}
+/* class */
+.text-white {
+  color: white;
+  background: grey;
+}
