@@ -737,3 +737,21 @@ display: none;
   background-color: white;
  
 }
+
+
+/* tour */
+.tour-deck {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-flow: row wrap;
+}
+.tour {
+  padding: 20px 0px 50px 0px;
+}
+.img-nhd {
+  height: 200px;
+  width: 100% !important;
+  border-radius: .25rem!important;
+  object-fit: cover !important;
+}

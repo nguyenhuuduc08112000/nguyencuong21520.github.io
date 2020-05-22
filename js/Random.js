@@ -1,5 +1,5 @@
 let dataFromLocalStorage = JSON.parse(localStorage.getItem("cart"));  
-console.log(dataFromLocalStorage)
+if(dataFromLocalStorage.length>0){
 let i = Math.floor(Math.random() * dataFromLocalStorage.length)
 
 document.querySelector('#showRandomResult').innerHTML = `
@@ -9,7 +9,7 @@ document.querySelector('#showRandomResult').innerHTML = `
     </div>
     <div id="slide-wrapper"></div>
   </div>
-</div>
+</div> 
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
   <div class="row tour-name">
     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
@@ -64,4 +64,5 @@ for(let img of dataFromLocalStorage){
     index +=1
     slider.innerHTML += html0
     label.innerHTML += html
+}
 }

@@ -123,23 +123,74 @@ const controller = {
         utils.setLoadingContent('#search-icon', `<i class="fas fa-search" style="color:  rgb(133, 133, 231); padding: 10px 10px;"></i>`)
     },
     getDataWhenClick: function (list, data) {
-        let cart = [];
         for (let i = 0; i < list.length; i++) {
             list.item(i).onclick = function () {
-                cart.push(data[i]);
-                localStorage.setItem("cart", JSON.stringify(cart))
-                document.querySelector('#countCard').innerText = cart.length
+                controller.addLocationToCartThenSaveToLocal(data[i])
+                document.querySelector('#countCard').innerText = controller.getCartFromLocal().length
+                console.log('cart', controller.getCartFromLocal())
                 // let dataFromLocalStorage = JSON.parse(localStorage.getItem("cart"));           
             }
         }
     },
+    addLocationToCartThenSaveToLocal(location) {
+        let cart = controller.getCartFromLocal()
+        if (!controller.locationExistsInCart(cart, location)) {
+            cart.push(location)
+            let cartString = JSON.stringify(cart)
+            localStorage.setItem('cart', cartString)
+        }
+        return cart
+    },
+    locationExistsInCart(cart, location) {
+        return cart.find(l => l.id == location.id)
+    },
+    getCartFromLocal() {
+        try {
+            let cartString = localStorage.getItem('cart')
+            let cart = JSON.parse(cartString || '')
+            return cart || []
+        } catch (err) {
+            return []
+        }
+    },
+    resetCart() {
+        let cart = []
+        let cartString = JSON.stringify(cart)
+        localStorage.setItem('cart', cartString)
+        return cart
+    },
     addLike: async function (user, id) {
-        if(model)
-        await firebase.firestore()
+        if (model)
+            await firebase.firestore()
             .collection('dataWhereToGo')
             .doc(id)
             .update({
                 like: firebase.firestore.FieldValue.arrayUnion(user)
             })
-    }
+    },
+    setUpDataChange : async function () {
+        let skipRun = true
+        firebase.firestore()
+            .collection('dataWhereToGo')
+            .onSnapshot(function (snapshot) {
+                if (skipRun) {
+                    skipRun = false
+                    return
+                }
+
+                let docChanges = snapshot.docChanges()
+                let alo123 = []
+                for (let docChange of docChanges) {
+                    let type = docChange.type
+                    let placeDoc = docChange.doc
+                    let place = utils.getDataFromDoc(placeDoc)
+                    if (type == 'modified') {
+                        model.updateDataChange(place)
+                        alo123.push(place)
+                        document.querySelector(`.left-incard-${place.id}`).innerHTML = ''
+                        view.showLike(alo123)
+                    }
+                }
+            })
+    },
 }

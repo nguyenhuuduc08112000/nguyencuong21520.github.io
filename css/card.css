@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box !important;
+    text-decoration: none;
 }
 
 .img-cuong {
@@ -107,11 +108,16 @@
 }
 .modal-footer p{
     font-size: 20px;
+    text-align: start;
 }
 .modal-footer p i{
     color: palevioletred;
 }
 .left-incard-content-wrapper p i {
     color: palevioletred;
+}
+.incrad-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
