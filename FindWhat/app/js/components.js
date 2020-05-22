@@ -783,19 +783,19 @@ const components = {
 
     </div>
 </div> `,
-    tour: `    <section style="margin-top: 20px; max-width:1500px" class="container container-card">
+    tour: `<section style="margin-top: 20px;" class="container container-card">
     <h2 style="text-align: center;">Các Tour Du Lịch Trong Ngày</h2>
-    <div class="tour-deck row">
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+    <div class="tour-deck">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Du Lịch Hà Nội</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://www.vietfuntravel.com.vn/image/cache/data/hanoi/hanoi_/1284430849_chua1cot-cr-466x310.jpg">
                 <div class="tour-body">
                     <h5>Điạ chỉ: Hà Nội</h5>
-                    <h5>Thời gian: 1 ngày</h5>
+                    <h5>Thời gian: Trong ngày</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
                     <h5>Giá Cả: 100.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT">Lịch Trình</button>
                         <div class="modal fade" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -856,16 +856,16 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Chùa Hương</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://mytourcdn.com/upload_images/Image/Han%20-%20Tour/ha%20hoi/xjp1404117442.jpg">
                 <div class="tour-body">
                     <h5>Địa chỉ: Hương Sơn, Mỹ Đức, Hà Nội</h5>
-                    <h5>Thời gian: 1 ngày</h5>
+                    <h5>Thời gian: Trong ngày</h5>
                     <h5>Phương tiện: Ôtô</h5>
                     <h5>Giá Cả: 700.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT1">Lịch Trình</button>
                         <div class="modal fade" id="modalYT1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -905,7 +905,7 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Chùa Tam Chúc</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://media.laodong.vn/Storage/NewsPortal/2018/10/4/634327/20-TS-620677-12-7.jpg">
@@ -914,7 +914,7 @@ const components = {
                     <h5>Thời gian: Trong ngày</h5>
                     <h5>Phương tiện: Ôtô</h5>
                     <h5>Giá Cả: 400.000đ-600.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT2">Lịch Trình</button>
                         <div class="modal fade" id="modalYT2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -955,16 +955,19 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+    </div>
+    <h2 style="text-align: center; padding-top: 50px;">Các Tour Du Lịch 2 Ngày 1 Đêm</h2>
+    <div class="tour-deck">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
-                <h3>Thiên đường Bảo Sơn</h3>
-                <img class="card-img-top img-fluid img-nhd" src="https://media.tieudungplus.vn/media/uploaded/17/2016/04/03/15-diem-du-lich-quanh-ha-noi-phu-hop-di-trong-ngay-9-ngaynay.jpg">
+                <h3>Ecopark</h3>
+                <img class="card-img-top img-fluid img-nhd" src="https://cdn.justfly.vn/640x359/media/b4/1f/e3f4-3d41-47b3-8bdc-4c92c5c34ef6.jpg">
                 <div class="tour-body">             
-                    <h5>Địa chỉ: Đ.Lê Trọng Tấn, An Khánh, Hoài Đức, Hà Nội</h5>
-                    <h5>Thời gian: Trong ngày</h5>
+                    <h5>Địa chỉ: Xuân Quan, Văn Giang, Hưng Yên</h5>
+                    <h5>Thời gian: 2 ngày 1 đêm</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
-                    <h5>Giá Cả: 100.000đ-150.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <h5>Giá Cả: 300.000đ-400.000đ</h5>
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT3">Lịch Trình</button>
                         <div class="modal fade" id="modalYT3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -975,16 +978,23 @@ const components = {
                                     <div class="content-cac-ban-oi">
                                         <h1 style="text-align: center";>Lịch Trình</h1>
                                         <div class="boc-noi-dung style="text-align: start;>
-                                            <h3>Có các khu vui chơi chính bạn không thể bỏ qua như: Làng nghề truyền thống, Tổ hợp Safari, Thế giới trò chơi, Thủy cung – công viên nước. Dưới đây một lịch trình xem ra khá “hoàn hảo” cho người đi chơi công viên Thiên Đường Bảo Sơn như sau:</h3>
-                                            <p>11 giờ: Mua vé vào cổng. Sau khi các bạn ăn trưa ở nhà hàng Gà Ngon  hoặc Dê Núi 9, 11h các bạn mua vé vào cổng. 11h vào là giờ lí tưởng nhất vì tất cả các chương trình biểu diễn của khu du lịch vào thời điểm này cũng mới bắt đầu tổ chức, trước đó mà vào thì chỉ chơi tự do chỗ này chỗ kia thôi.</p>
-                                            <p>11h-11h30: Ăn xong nhà hàng ngoài cổng rồi thì 11h vào mua vé để vào khu du lịch. Đầu tiên là đi xem biểu diễn múa rối nước ở khu làng nghề. Nhớ là ngày thứ 2 không có nhé.</p>
-                                            <p>11h30-13h: Đi Thủy cung vì có điều hòa mát rượi tránh cái nắng gay gắt đỉnh điểm của buổi trưa hè. Thủy cung Thiên Đường Bảo Sơn được xây dựng thành 3 tầng “trên cao”  và 1 tầng ngầm “thủy cung” . Sẽ không giống như tưởng tượng của nhiều bạn là toàn bộ phải chìm dưới nước. Nếu những bạn nào từng đi Thủy cung Times City rồi thì sẽ thấy rõ sự khác biệt này.</p>
-                                            <p>13h – 14h: Đi ngắm các con vật, chơi trò chơi ở khu Safari và  quay ra tham gia vào thế giới trò chơi tại Thiên Đường Bảo Sơn</p>
-                                            <p>14h-14h30: Đi xem biểu diễn dân ca và nhạc cổ truyền Việt Nam ở khu làng nghề.  Nhớ là thứ 3 không biểu diễn nhé.</p>
-                                            <p>14h30-15h: Đi xem biểu diễn xiếc Hải cẩu và xiếc chó.  Giờ không còn xiếc cá heo nữa các bạn nhé. Hơi tiếc vì từ trước đến nay Thiên Đường Bảo Sơn rất nổi tiếng với màn biểu diễn này cực hấp dẫn trẻ nhỏ. Tuy nhiên xiếc  hải cẩu và xiếc chó các bé xem cũng thích lắm đấy, không thể chê được.</p>                                                   
-                                            <p>15h-16h: Chụp ảnh, check in các kiểu, thăm phố cổ, khu làng nghề truyền thống</p>
-                                            <p>16h-17h: Tắm ở khu bể bơi. Bể bơi có mái che nên nếu bạn thích tắm sớm có nắng vẫn tắm được. Có khu căng tin có nước mía, nước ngọt, kem các loại, giá không quá đắt, 15K/cốc nước mía hoặc một que kem Melino là có thể chấp nhận được. Gửi đồ, thuê đồ bơi thì phải mất phí. Giá niêm yết ngoài bảng rồi nhé.</p>
-                                            <p>17h: Ra về và ghé một nhà hàng gần đó ăn bữa chiều rồi mới lên xe về nhà bởi vì bơi xong rất đói, và về đến nhà muộn cũng chả kịp đi chợ nấu cơm.</p>
+                                            <p>Đến với Ecopark, mọi hoạt động vui chơi, tham quan của bạn hầu hết được thực hiện ngoài trời. Chính bởi vậy, dù có thể đến Ecopark vào bất cứ thời gian nào, bạn nên lựa chọn những ngày trời mát mẻ, không mưa và không nắng quá gắt để vui chơi.</p>
+                                            <p>Ngày 1: xuất phát từ Hà Nội tới Ecopark, có thể tham quan các công viên mùa xuân, mùa hạ, mùa thu. Sau khi ăn trưa có thể ra hồ bơi và dùng tiệc nướng vào buổi tối.</p>
+                                            <p>Ngày 2: Gia đình có thể đốt lửa trại, đi xe đạp quanh khuôn viên và quay về Hà Nội vào buổi chiều.</p>
+                                            <h4>Gợi ý ăn uống khi đến Ecopark</h4>
+                                            <p>Khu đô thị Ecopark có đầy đủ chuỗi cửa hàng ẩm thực đa dạng và phong phú, vì thế các bạn có thể khám phá ẩm thực đủ các vùng miền tại đây. Từ đồ ăn bình dân cho tới những món ăn hiện đại, tất cả đều được chế biến vô cùng tỉ mỉ và hấp dẫn. Các bạn có thể ghé qua những quán ăn, nhà hàng như: Nhà hàng Gà Lên Mâm, Cây Cau, ẩm thực Mường,…</p>
+                                            <p>Nếu muốn nhâm nhi thêm tách cafe sau bữa ăn, có thể đến với Ciao Cafe, Link Cafe hay Cà phê Đak Hà ở ngay trong khu đô thị.</p>
+                                            <h4>Ưu điểm và nhược điểm khi du lịch tại Tam Đảo</h4>
+                                            <p style="font-style: italic;">Ưu điểm</p>
+                                            <p>Phù hợp với du lịch cùng gia đình.</p>
+                                            <p>Có không gian cắm trại, picnic,...</p>
+                                            <p>Hồ điều hòa trong lành và mát mẻ, thích hợp du lịch 4 mùa.</p>
+                                            <p>Không gian hiện đại, thoáng đãng.</p>
+                                            <p>Gần ngay trung tâm Hà Nội.</p>
+                                            <p style="font-style: italic;">Nhược điểm</p>
+                                            <p>Không có những địa điểm cho các bạn ưa mạo hiểm, thích khám phá.</p>
+                                            <p>Chỉ phù hợp với những du khách ưa thích kiểu du lịch nghỉ dưỡng.</p>
+                                            <p>Giá cả và chi phí dịch vụ khá cao.</p>
                                         </div>
                                     </div>       
                                 </div>
@@ -1005,10 +1015,7 @@ const components = {
                 </div>
             </div>
         </div>
-    </div>
-    <h2 style="text-align: center; padding-top: 50px;">Các Tour Du Lịch 2 Ngày 1 Đêm</h2>
-    <div class="tour-deck row">
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Hồ Đại Lải</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://cdn.justfly.vn/1024x576/media/5e/a4/0a6b-3f4c-4951-bf6d-f9f2c936167f.jpg">
@@ -1017,7 +1024,7 @@ const components = {
                     <h5>Thời gian: 2 ngày 1 đêm</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
                     <h5>Giá Cả: 700.000đ-2.500.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT4">Lịch Trình</button>
                         <div class="modal fade" id="modalYT4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -1063,7 +1070,7 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Tam Đảo</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://cdn.justfly.vn/924x616/media/f2/33/8281-cd87-476d-8013-d97b80ff94cf.jpg">
@@ -1072,7 +1079,7 @@ const components = {
                     <h5>Thời gian: 2 ngày 1 đêm</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
                     <h5>Giá Cả: 500.000đ-1.000.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT5">Lịch Trình</button>
                         <div class="modal fade" id="modalYT5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -1119,7 +1126,7 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>My hill</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://cdn.justfly.vn/825x550/media/fb/42/3a85-6613-46e2-9ab1-8dbc4b71467b.jpg">
@@ -1128,7 +1135,7 @@ const components = {
                     <h5>Thời gian: 2 ngày 1 đêm</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
                     <h5>Giá Cả: 300.000đ-500.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT6">Lịch Trình</button>
                         <div class="modal fade" id="modalYT6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -1174,7 +1181,7 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Ba Vì</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/06/du-lich-ba-vi-vuon-quoc-gia-2.jpg">
@@ -1183,7 +1190,7 @@ const components = {
                     <h5>Thời gian: 2 ngày 1 đêm</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
                     <h5>Giá Cả: 700.000đ-4.000.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT7">Lịch Trình</button>
                         <div class="modal fade" id="modalYT7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -1227,7 +1234,7 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Mai Châu</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://cdn.justfly.vn/825x550/media/6d/e2/a1f4-9d16-48b0-b04b-fb7d38482598.jpg">
@@ -1236,7 +1243,7 @@ const components = {
                     <h5>Thời gian: 2 ngày 1 đêm</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
                     <h5>Giá Cả: 200.000đ-400.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT8">Lịch Trình</button>
                         <div class="modal fade" id="modalYT8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -1283,7 +1290,7 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Núi Trầm</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://cdn.justfly.vn/653x420/media/de/a1/00d4-4cd3-4cb3-86f6-a30ff4425e48.jpg">
@@ -1292,7 +1299,7 @@ const components = {
                     <h5>Thời gian: 2 ngày 1 đêm</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
                     <h5>Giá Cả: 10.000đ-150.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT9">Lịch Trình</button>
                         <div class="modal fade" id="modalYT9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
@@ -1340,7 +1347,7 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Hàm Lợn</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://cdn.justfly.vn/660x439/media/72/f7/c581-331d-4003-b28c-825e6515d40c.jpg">
@@ -1349,15 +1356,15 @@ const components = {
                     <h5>Thời gian: 2 ngày 1 đêm</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
                     <h5>Giá Cả: 300.000đ-400.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT10">Lịch Trình</button>
                         <div class="modal fade" id="modalYT10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
                               <!--Content-->
-                                <div class="modal-content">
+                                <div class="content-cac-ban-oi">
                                 <!--Body-->
                                 <div class="modal-body mb-0 p-0">
-                                    <div class="content-cac-ban-oi">
+                                    <div class="content-nhd">
                                         <h1 style="text-align: center";>Lịch Trình</h1>
                                         <div class="boc-noi-dung style="text-align: start;>
                                             <p>Du lịch Hàm Lợn có thể đi cả vào bốn mùa, tùy thuộc vào bạn thích trải nghiệm mà nóng hay lạnh. Sự lựa chọn tốt nhất là bạn nên đi vào mùa xuân hoặc thu, khi thời tiết khô ráo, mát mẻ và không mưa quá nhiều. Các nhóm bạn trẻ không nên tới đây vào mùa mưa, nước dâng bởi sẽ không an toàn.</p>
@@ -1396,7 +1403,7 @@ const components = {
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-12">
+        <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
             <div class="tour">
                 <h3>Khoang xanh - Suối tiên</h3>
                 <img class="card-img-top img-fluid img-nhd" src="https://cdn.justfly.vn/640x428/media/73/b5/474d-eab7-4575-9cdb-27472ffaa37e.jpg">
@@ -1405,7 +1412,7 @@ const components = {
                     <h5>Thời gian: 2 ngày 1 đêm</h5>
                     <h5>Phương tiện: Xe máy, Ôtô</h5>
                     <h5>Giá Cả: 500.000đ</h5>
-                    <div class="incrad-wrapper">
+                    <div class="schedule-nhd">
                         <button type="button" class="btn btn-outline-light text-dark" data-toggle="modal" data-target="#modalYT11">Lịch Trình</button>
                         <div class="modal fade" id="modalYT11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-lg" role="document">
